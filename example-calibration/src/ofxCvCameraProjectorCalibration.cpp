@@ -180,7 +180,7 @@ namespace ofxCv {
             params.maxArea = 10e4;
             params.minArea = 10;
             params.minDistBetweenBlobs = 5;
-            Ptr<FeatureDetector> blobDetector = new SimpleBlobDetector(params);
+            Ptr<FeatureDetector> blobDetector = SimpleBlobDetector::create(params);
 
             bool bProjectedPatternFound = cv::findCirclesGrid(processedImg, calibrationProjector.getPatternSize(), circlesImgPts, cv::CALIB_CB_ASYMMETRIC_GRID, blobDetector);
             

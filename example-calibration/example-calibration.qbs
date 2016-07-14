@@ -3,10 +3,10 @@ import qbs.Process
 import qbs.File
 import qbs.FileInfo
 import qbs.TextFile
-import "/home/duy/of_v0.9.2_linux64_release/libs/openFrameworksCompiled/project/qtcreator/ofApp.qbs" as ofApp
+import "/home/parallels/of_v0.9.3_linux64_release/libs/openFrameworksCompiled/project/qtcreator/ofApp.qbs" as ofApp
 
 Project{
-    property string of_root: '/home/duy/of_v0.9.2_linux64_release'
+    property string of_root: '/home/parallels/of_v0.9.3_linux64_release'
 
     ofApp {
         name: { return FileInfo.baseName(path) }
@@ -63,3 +63,4 @@ Project{
 
     references: [FileInfo.joinPaths(of_root, "/libs/openFrameworksCompiled/project/qtcreator/openFrameworks.qbs")]
 }
+
